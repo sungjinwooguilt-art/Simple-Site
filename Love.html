@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love-Express</title>
+    <style>
+        /* Global Reset and Base Styles */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; /* Ensures padding/border don't affect total width/height */
+        }
+        body {
+            font-family: 'Arial', sans-serif; /* Clean, modern font */
+            background-color: #FFC0CB; /* Soft Pink background */
+        }
+        
+        /* Container: Center everything reliably using Flexbox */
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center;
+        }
+
+        /* Content Card: Gives the content a clean, separate area */
+        .love-express {
+            background-color: white; /* White background for good contrast */
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Soft, elegant shadow */
+            max-width: 90%;
+        }
+        
+        /* Heading Styling */
+        h2 {
+            font-size: clamp(3rem, 8vw, 4.5rem); /* Responsive font size */
+            margin-bottom: 40px;
+            color: #4A142D; /* Deep Burgundy for strong contrast */
+        }
+        
+        /* Highlighting the word 'love' */
+        .love span {
+            color: #E91E63; /* Vibrant Pink accent */
+        }
+        
+        /* Button Base Styles */
+        .NopeL, .YesL {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 0 15px; /* Space between buttons */
+            border-radius: 50px; /* Pill shape */
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Styling the 'No' Button (NopeL) */
+        .NopeL {
+            color: #880E4F; /* Dark Red/Pink text */
+            background: #F8BBD0; /* Light Pink background */
+            border: 2px solid #880E4F;
+        }
+        
+        /* Styling the 'Yes' Button (YesL) */
+        .YesL {
+            color: white;
+            /* Richer Pink gradient for emphasis */
+            background: linear-gradient(45deg, #FF4081 0%, #E91E63 100%);
+            border: none;
+            box-shadow: 0 4px 10px rgba(233, 30, 99, 0.4);
+        }
+        
+        /* Hover Effects for both buttons */
+        .NopeL:hover, .YesL:hover {
+            transform: translateY(-3px); /* Lifts the button slightly */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .NopeL:active, .YesL:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="love-express">
+            <h2>Do you <span class="love">love</span> me?</h2>
+            
+            <a href="nolove.html" class="NopeL">No</a>
+            <a href="yeslove.html" class="YesL">Yes</a>
+        </div>
+    </div>
+</body>
+</html>
